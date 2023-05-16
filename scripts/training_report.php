@@ -18,6 +18,7 @@
 	require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/include/config.php");
 	require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/include/config.php");
 	require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/include/config.php");
+	require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/include/config.php");
     require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/models/settings.php");
     require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/models/db/".$dbtype.".php");
     require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/models/funcs.general.php");
