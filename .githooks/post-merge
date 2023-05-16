@@ -17,4 +17,10 @@ fi
 echo " "
 echo "You've just merged the branch \"$merged_branch_name\" into \"$branch_name\". "
 
-grep -rl --exclude-dir=.git --exclude-dir=.githooks 'subdomains/ote' . | xargs sed -i 's~subdomains\/ote~httpdocs~g';
+if [[$merged_branch_name = 'dev'] || [$merged_branch_name = 'Fast-forward'] ]  && [ $branch_name = 'main' ]
+then
+    echo "Both conditions are true"
+	grep -rl --exclude-dir=.git --exclude-dir=.githooks 'subdomains/ote' . | xargs sed -i 's~subdomains\/ote~httpdocs~g';
+else
+    echo "No bash executed"
+fi
