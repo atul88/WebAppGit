@@ -15,14 +15,16 @@
     // require_once("/var/www/vhosts/fors-online.org.uk/httpdocs/models/db/".$dbtype.".php");
     // require_once("/var/www/vhosts/fors-online.org.uk/httpdocs/models/funcs.general.php");
 
-	require_once("/var/www/vhosts/fors-online.org.uk/httpdocs/include/config.php");
-    require_once("/var/www/vhosts/fors-online.org.uk/httpdocs/models/settings.php");
-    require_once("/var/www/vhosts/fors-online.org.uk/httpdocs/models/db/".$dbtype.".php");
-    require_once("/var/www/vhosts/fors-online.org.uk/httpdocs/models/funcs.general.php");
+	require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/include/config.php");
+	require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/include/config.php");
+	require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/include/config.php");
+    require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/models/settings.php");
+    require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/models/db/".$dbtype.".php");
+    require_once("/var/www/vhosts/fors-online.org.uk/subdomains/ote/models/funcs.general.php");
     require_once("/var/www/vhosts/fors-online.org.uk/httpdocs/include/class.phpmailer.php");
 
     //Construct a db instance
-    $db = new dbal_mysqli;
+    $db = new dbal_mysqli;     
     if(is_array($db->sql_connect(
                             $db_host,
                             $db_username,
